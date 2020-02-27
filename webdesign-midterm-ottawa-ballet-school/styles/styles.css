@@ -1,0 +1,371 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*CSS reset ends here*/
+
+html{
+    background-color:#F2EADF;
+    font-size:15px;
+    font-family:'Open Sans', sans-serif;
+}
+
+/*************** mobile version ***************/
+
+/*style header*/
+.logo{
+    width:130px;
+    margin:1.5rem 1.5rem 4rem;
+}
+.header{
+    background-image: url(../img/group4.png);
+    background-size:100% 100%;
+}
+
+h1{
+    color:white;
+    text-align: center;
+    padding-bottom:0.5rem;
+    font-weight:bold;
+}
+
+    /**style ABOUT page header**/
+.headera{
+    background-image: url(../img/sitting-stretching.jpg);
+    background-size:100% 100%;
+}
+    /**style CONTACT page header**/
+.headerb{
+    background-image: url(../img/hero_banner3.png);
+    background-size:100% 100%;
+}
+
+.headerc{
+    background-image: url(../img/swanlake_2.png);
+    background-size:100% 100%;
+}
+
+/**style the navigation bar**/
+nav{
+    float:right;
+    margin-top:1.5rem;
+    margin-right:1.5rem;
+}
+nav a, button{
+    color:white;
+    font-size:0.8rem;
+    text-decoration:none;
+    margin:1rem;
+}
+
+button{
+    padding:0;
+    border:0;
+    background-color: black;
+    cursor: pointer;
+}
+
+/***give a background color when clicked or hovered***/
+nav a:hover, nav a:active, button:hover, button:active{
+    background-color:#F2EADF;
+    color:black;    
+}
+
+/***drop down menu***/
+.dropcontent{
+    display: none;
+    position: absolute;
+    background-color:black;
+    color:#F2EADF;
+}
+
+.dropdown:hover .dropcontent, .dropdown:active .dropcontent{
+    display:block;
+}
+
+/*style main*/
+.news, .newsa{
+    height:125px;
+    width:100%;
+    margin-bottom:2rem;
+}
+
+.mainimg img, .mainaimg img, .mainbimg img, .maincimg img, .maindimg img{
+    width:100%;
+    height:200px;
+    object-fit: cover;
+}
+.maina, .teacher,.student, .mainc{
+    overflow:hidden;
+} 
+
+.content{
+    margin:0 1.5rem 1.5rem;
+    text-align: center;
+}
+
+.content button{
+    font-size:0.8rem;
+    padding:0.5rem;
+    margin:0.25rem;
+}
+
+h2{
+    font-weight:bold;
+    text-align:center;
+}
+
+.content p{
+    font-style: italic;
+    margin-bottom:0.25rem;
+}
+
+/**style student page**/
+.student p{
+    font-family:'Dancing Script', serif;
+}
+
+/**style contact page - form, direct contact**/
+form{
+    margin:1.5rem;
+}
+
+label{
+    vertical-align: top;
+    margin:0.2rem;
+}
+
+input,
+select,
+textarea{
+    background:none;
+    font-size:0.8rem;
+    padding:0.2rem;
+    border:0.05rem solid black;
+    margin:0.2rem 0 1rem;
+    width:100%;
+    box-sizing:border-box;
+}
+
+textarea{
+    height:5rem;
+}
+
+form button{
+    display:block;
+    background-color: black;
+    padding:0.2rem;
+    margin:0.5rem auto 2.5rem;
+    width:120px;
+}
+
+        /**remove border-radius from select tag**/
+select {
+    -webkit-appearance: none;
+    border-radius:0;
+}
+
+input:focus,
+select:focus,
+textarea:focus{
+    outline-color:#736565;
+    border-color:#736565;
+}
+
+/**style contact feedback page **/
+.content button.feedback{
+    margin:3rem;
+}
+
+.fbimg{
+    width:100%;
+    margin-bottom:3rem;
+}
+
+/*style footer*/
+footer{
+    background-color: black;
+    height:100px;   
+}
+
+.social a{
+    color:white;
+    text-decoration: none;
+    margin:1.25rem 1rem;
+}
+
+.social{
+    color:white;
+    text-align:center;
+}
+
+.fa-caret-up{
+    color:white;
+    position:absolute;
+    right:1.5rem;
+}
+
+/************* tablet version ****************/
+@media screen and (min-width:600px){
+    html{
+        font-size:20px;
+    }
+    
+    /*style header*/
+    .logo{
+        width:180px;
+        margin:3rem 3rem 6rem;
+    }
+    
+        /***change menu to horizontal version***/
+    nav{
+        display:flex;
+        position: absolute;
+        top:2rem;
+        right:1.5rem;  /**3rem-1.5=1.5**/
+    }
+    .dropcontent a{
+        display:block;
+    }
+
+    /*style main*/
+    .news, .newsa{
+        height:300px;
+    }
+    .main .content{
+        margin:1rem 3rem;
+    }
+        /***display images in grid***/
+    .mainimg, .programa, .programb, .programc, .programd, .mainb, .student, .maind{
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    /**style program, teacher, student, contact page**/
+    form, .maina, .mainb, .mainc, .maind{
+        margin:1rem 3rem;
+    }
+
+    .maina div{
+        margin-bottom: 1rem;;
+    }
+    .mainb .content, .programa .content, .programb .content, .programc .content, .programd .content{
+        margin:0.5rem 0;
+    }
+    .mainc .content, .maind .content{
+        margin:2rem 0;
+    }
+    .programa, .programb, .programc, .programd, .mainb, .student, .maind{
+        grid-gap: 2rem;
+    }
+    .programb .mainaimg, .programd .mainaimg{
+        grid-column: 2/3;
+    }
+    .programb .content, .programd .content{
+        grid-row: 1/2;
+    }
+    .maincimg, .maindimg{
+        height:180px;
+        margin-bottom:3rem;
+    }
+            /***put label and input in the same line***/
+    form div{
+        display:grid;
+        grid-template-columns: 1fr 3fr;
+    }
+    
+    /*style footer*/
+    footer{
+        height:130px;
+    }
+    .fa-caret-up{
+        right:3rem;
+    }
+}
+
+/************* desktop version ****************/
+@media screen and (min-width:992px){
+    html{
+        font-size:25px;
+    }
+    /*style header*/
+    .logo{
+        width:200px;
+        margin:1rem 6rem 4rem;
+    }
+    nav{
+        margin:0 4.5rem;    /**6-1.5**/
+    }
+    /**style main**/
+    .main .content, .main .mainimg, .maina,.mainb, .mainc, form, .maind{
+        margin:1rem 6rem;
+    }
+    .news, .newsa{
+        height:400px;
+        object-fit: cover;
+    }
+
+    .mainimg img, .mainaimg img, .mainbimg img, .maincimg img, .maindimg img, .fbimg{
+        height:300px;
+        object-fit:cover;
+    }
+    .newsa{ 
+        margin:1rem 6rem;
+        width:calc(100% - 12rem);
+    }
+    .programa, .programb, .programc, .programd, .mainb, .student, .maind{
+        grid-gap: 3rem;
+    }
+    .student{
+        margin-bottom:1rem;
+    }
+    .sales{
+        display:flex;
+        flex-direction: column;
+    }
+}
