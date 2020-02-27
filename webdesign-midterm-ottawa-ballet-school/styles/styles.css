@@ -145,11 +145,11 @@ nav a:hover, nav a:active, button:hover, button:active{
 } 
 
 .content{
-    margin:0 1.5rem 1.5rem;
+    margin:0 1.5rem 0;
     text-align: center;
 }
 
-.content button{
+.learn{
     font-size:0.8rem;
     padding:0.5rem;
     margin:0.25rem;
@@ -171,7 +171,7 @@ h2{
 }
 
 /**style contact page - form, direct contact**/
-form{
+.inquiries{
     margin:1.5rem;
 }
 
@@ -204,6 +204,10 @@ form button{
     width:120px;
 }
 
+.learn button{
+    margin-bottom:0;
+}
+
         /**remove border-radius from select tag**/
 select {
     -webkit-appearance: none;
@@ -218,13 +222,17 @@ textarea:focus{
 }
 
 /**style contact feedback page **/
-.content button.feedback{
+.feedback{
     margin:3rem;
 }
 
 .fbimg{
     width:100%;
     margin-bottom:3rem;
+}
+
+iframe{
+    width:100%;
 }
 
 /*style footer*/
@@ -287,8 +295,12 @@ footer{
     }
     
     /**style program, teacher, student, contact page**/
-    form, .maina, .mainb, .mainc, .maind{
+    .inquiries, .maina, .mainb, .mainc, .maind{
         margin:1rem 3rem;
+    }
+    form button{
+        padding:0.5rem;
+        width:200px;
     }
 
     .maina div{
@@ -314,7 +326,7 @@ footer{
         margin-bottom:3rem;
     }
             /***put label and input in the same line***/
-    form div{
+    .inquiries div{
         display:grid;
         grid-template-columns: 1fr 3fr;
     }
@@ -342,19 +354,22 @@ footer{
         margin:0 4.5rem;    /**6-1.5**/
     }
     /**style main**/
-    .main .content, .main .mainimg, .maina,.mainb, .mainc, form, .maind{
+    .main .content, .main .mainimg, .maina,.mainb, .mainc, .inquiries, .maind{
         margin:1rem 6rem;
     }
     .news, .newsa{
         height:400px;
         object-fit: cover;
     }
-
+    form button{
+        padding:0.6rem;
+        width:250px;
+    }
     .mainimg img, .mainaimg img, .mainbimg img, .maincimg img, .maindimg img, .fbimg{
         height:300px;
         object-fit:cover;
     }
-    .newsa{ 
+    .newsa, .fbimg{ 
         margin:1rem 6rem;
         width:calc(100% - 12rem);
     }
