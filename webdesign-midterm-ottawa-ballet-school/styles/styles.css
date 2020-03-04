@@ -130,9 +130,10 @@ nav a:hover, nav a:active, button:hover, button:active{
 
 /*style main*/
 .news, .newsa{
-    height:125px;
+    height:180px;
     width:100%;
     margin-bottom:2rem;
+    object-fit: cover;
 }
 
 .mainimg img, .mainaimg img, .mainbimg img, .maincimg img, .maindimg img{
@@ -221,9 +222,9 @@ textarea:focus{
     border-color:#736565;
 }
 
-/**style contact feedback page **/
-.feedback{
-    margin:3rem;
+/**style contact response page **/
+h3{
+    margin:2rem;
 }
 
 .fbimg{
@@ -348,7 +349,7 @@ footer{
     /*style header*/
     .logo{
         width:200px;
-        margin:1rem 6rem 4rem;
+        margin:1rem 6rem 8rem;
     }
     nav{
         margin:0 4.5rem;    /**6-1.5**/
