@@ -26,21 +26,34 @@
     </div> <!--header ends here-->
 
     <div class="main">
-        <img src="img/group6.jpg" alt="group" class="news">
+        <picture>
+            <source srcset="img/square/group6-480.jpeg 1x, 
+                            img/square/group6-960.jpeg 2x,
+                            img/square/group6-1920.jpeg 3x"
+                    media="(min-width: 960px)">
+                    <!--from square to landscape-->
+            <source srcset="img/landscape/group6-960.png 1x, 
+                            img/landscape/group6-1920.png 2x,
+                            img/landscape/group6-2880.png 3x"
+                    media="(max-width: 959px)">
+            <img src="img/group6.jpg" alt="group" class="news">
+        </picture>  <!--responsive image-->
         <div class="content">
             <h2>Popular Programs</h2>
             <p>Ottawa Ballet School welcomes everyone to explore the beautiful Art of Dance for the first time or to master your dance skills.</p>
             <form style="display: inline" action="program.html" method="get" class="learn">
-                <button>Learn More</button>
+                <button>Learn More</button>  <!-- <a> cannot be the parent of <button>, so used a form to introduce the linked button-->
             </form>
         </div>
-        <div class="mainimg">
-            <img src="img/ballet-single.jpg" alt="adult">
-            <img src="img/grouppractice.jpg" alt="youth">
-            <img src="img/boy-ballet.jpg" alt="child">
-            <img src="img/figure-skaters.jpg" alt="figure">
-        </div>
     </div> <!--main ends here-->
+
+    <div class="mainimg">
+        <img src="img/proadult.jpg" alt="adult">  
+        <img src="img/proyouth.jpg" alt="youth">
+        <img src="img/prochild.jpg" alt="child">
+        <img src="img/figure-skaters.jpg" alt="figure">
+    </div>
+    <!--if there are many imgs on the website, should i do <picture> for every img t maximize the quality of the img?-->
 
     <footer>
         <a href="#top"><i class="fa fa-caret-up"></i></a>

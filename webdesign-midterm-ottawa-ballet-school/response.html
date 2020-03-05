@@ -27,11 +27,22 @@
     
     <div class="main">
         <div class="content">
-            <h3>Successful<h3>
+            <h3>Successful</h3>
             <h2>Thank you for your inquiries! </h2>
             <p>You will receive an email soon. </p>
         </div>
-        <img src="img/hero_banner-1980x970-daytime.jpg" alt="group" class="fbimg">
+        <picture>
+            <source srcset="img/square/response-480.jpeg 1x, 
+                        img/square/response-960.jpeg 2x,
+                        img/square/response-1920.jpeg 3x"
+                    media="(min-width: 960px)">
+                    <!--from square to landscape-->
+            <source srcset="img/landscape/response-960.png 1x, 
+                            img/landscape/response-1920.png 2x,
+                            img/landscape/response-2880.png 3x"
+                    media="(max-width: 959px)">
+            <img src="img/response.jpg" alt="group" class="fbimg">
+        </picture>  <!--responsive image-->
     </div>
 
     <footer>
