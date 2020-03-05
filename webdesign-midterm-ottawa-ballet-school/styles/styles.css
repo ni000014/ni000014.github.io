@@ -321,10 +321,13 @@ footer{
     .newsa{
         height:300px;
     }
-    .main .content{
-        margin:1rem 3rem;
-    }
     
+    .main .content{
+    margin:0 auto;
+    text-align: center;
+    max-width:500px;  /**stop content from streching out**/
+    }
+
         /***display images in grid***/
     .mainimg, .programa, .programb, .programc, .programd, .mainb, .student, .maind{
         display:grid;
