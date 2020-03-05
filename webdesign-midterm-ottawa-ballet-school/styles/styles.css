@@ -184,6 +184,7 @@ h1{
 h2{
     font-weight:bold;
     text-align:center;
+    padding:0.5rem;
 }
 
 /**transform&transition - give a border-radius to the "learn more" and "submit" buttons when hover**/
