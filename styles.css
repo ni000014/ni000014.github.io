@@ -57,12 +57,10 @@ html{
 /****************** mobile version*******************/
 
 /*background image for loading page*/
-/* 
 .loading{
     background-image: url(imgs/backgroundsm.gif);
     background-size:cover;
-} */
-
+} 
 
 .logolg{
     position:fixed;
