@@ -125,6 +125,10 @@ footer a{
     right:10%;
     top:5%;
 }
+
+.icon i:before{
+    content:"\f0c9";
+}
 .active {
     text-decoration:underline;
 }
