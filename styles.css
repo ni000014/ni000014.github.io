@@ -60,7 +60,7 @@ html{
 .loading{
     background-image: url(imgs/backgroundsm.gif);
     background-size:cover;
-} 
+}
 
 .logolg{
     position:fixed;
@@ -93,9 +93,8 @@ body h1{
 
 /*style navigation*/
 .nav{
-    overflow:hidden;
     position:fixed;
-    right:10%;
+    right:5%;
     top:8%; 
 }
 
@@ -118,11 +117,13 @@ footer a{
     display:none;
 }
 .nav .icon{
+    height: 40px;
+    width: 40px;
     background:transparent;
     display:block;
     color:#733d41;
     position: fixed;
-    right:10%;
+    right:5%;
     top:5%;
 }
 

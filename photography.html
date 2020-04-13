@@ -12,28 +12,20 @@
     <div class="header" id="top">
         <a href="index.html"><img src="imgs/logo.png" alt="logo" class="logo"></a>
         <div class="nav">
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
             <nav id="links">
                 <a href="photography.html" class="active">PHOTOGRAPHY</a>
                 <a href="webdesign.html">WEB DESIGN</a>
                 <a href="illustration.html">ILLUSTRATION</a>
             </nav>  
             <!-- hamburger menu / bar icon to toggle the navigation links -->
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                <i class="fa fa-bars"></i>
-            </a>
+
         </div>  
     </div> 
     <!--javascript for the hamburger menu-->
-    <script>
-        function myFunction() {
-          var x = document.getElementById("links");
-          if (x.style.display === "block") {
-            x.style.display = "none";
-          } else {
-            x.style.display = "block";
-          }
-        }
-    </script>
+    <script src='./nav.js'></script>
     <!--header ends here-->  
 
     <div class="gallery">
