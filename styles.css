@@ -126,10 +126,6 @@ footer a{
     top:5%;
 }
 
-.icon i:before{
-    content:"\f0c9";
-}
-
 .active {
     text-decoration:underline;
 }
