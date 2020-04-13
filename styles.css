@@ -1,0 +1,512 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*CSS reset ends here*/
+
+html{
+    font-size:16px;
+    font-family:'Basic', sans-serif;
+}
+
+/****************** mobile version*******************/
+
+/*background image for loading page*/
+.loading{
+    background-image: url(imgs/backgroundsm.gif);
+    background-size:cover;
+}
+
+.logolg{
+    position:fixed;
+    top:30%;
+    left:37%;
+    max-width:30%;
+}
+
+/*** style header ***/
+.logo{
+    display:block;
+    margin:0 auto;
+    padding-top:4rem;
+    padding-bottom:5rem;
+    max-width:20%;
+}
+
+.header{
+    background-image: url(imgs/headerimg.png);
+    background-size:cover;
+}
+
+body h1{
+    color:#733d41;
+    text-align: center;
+    padding:3rem 0 1rem 0;
+    font-size:1.25rem;
+    font-weight:bold;
+}
+
+/*style navigation*/
+.nav{
+    overflow:hidden;
+    position:fixed;
+    right:10%;
+    top:8%; 
+}
+
+nav a, footer a{
+    color:#733d41;
+    padding:0.35rem 0;
+    text-decoration: none;
+    display:block;
+    font-size:1rem;     
+}
+
+footer a{
+    position:fixed;
+    right:10%;
+    bottom:20%;
+}
+
+/*hide the navigation links*/
+#links{
+    display:none;
+}
+.nav .icon{
+    background:transparent;
+    display:block;
+    color:#733d41;
+    position: fixed;
+    right:10%;
+    top:5%;
+}
+.active {
+    text-decoration:underline;
+}
+
+
+/***style the gallery***/
+.gallery{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(7, 30vw);
+    grid-gap: 5px;
+    margin:5px;
+}
+
+.gallery img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.gallery1{
+    grid-column:1/2;
+    grid-row:1/3;
+}
+.gallery5{
+    grid-column:1/2;
+    grid-row:4/6;
+}
+.gallery6{
+    grid-column:2/3;
+    grid-row:3/5;
+}
+.gallery7{
+    grid-column:1/2;
+    grid-row:6/8;
+}
+.gallery8{
+    grid-column:2/3;
+    grid-row:5/7;
+}
+
+.work{
+    display:grid;
+    grid-template-columns:1;
+    grid-template-rows: repeat(4, 50vw);
+    grid-gap:5px;
+    margin:5px;
+}
+
+.work img, .web img, .main img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.web{
+    display:grid;
+    grid-template-columns:1fr;
+    grid-template-rows: 1fr;
+    grid-gap:10px;
+    margin:5px;
+}
+.web h2{
+    font-family: "Poiret One", sans-serif;
+    font-size:1.15rem;
+    text-align:center;
+    color:#733d41;
+}
+.web .content p, .main article p{
+    font-size:1.15rem;
+}
+.web1 .content p, .web2 .content p{
+    padding:8px;
+}
+
+.main{
+    display:grid;
+    grid-template-columns:1fr;
+    grid-template-rows: 0.8fr 0.2fr 0.8fr;
+    grid-gap:5px;
+    margin:5px;
+}
+
+.main .content{
+    text-align:center;
+    font-family: "Poiret One", sans-serif;
+}
+
+/**style animation contact page moving content**/
+article {
+    max-width: 800px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    min-height: 4em;
+}
+  
+.example-left {
+    white-space: nowrap;
+    position: absolute;
+    text-transform: uppercase;
+}
+  
+.example-left {
+    -webkit-animation: mymove 8s linear infinite; /* Safari 4.0 - 8.0 */
+    white-space: nowrap;
+    animation: mymove 8s linear infinite alternate;
+}
+  
+  /* Safari 4.0 - 8.0 */
+@-webkit-keyframes mymove {
+    from {
+      left: 0;
+    }
+    to {
+      left: -140px;
+    }
+}
+  
+@keyframes mymove {
+    from {
+      left: 0;
+    }
+    to {
+      left: -140px;
+    }
+} 
+  
+.example-right {
+    white-space: nowrap;
+    position: absolute;
+    top:2em;
+    opacity: .4;
+    text-transform: uppercase;
+}
+  
+.example-right {
+    -webkit-animation: urmove 8s linear infinite; /* Safari 4.0 - 8.0 */
+    white-space: nowrap;
+    animation: urmove 8s linear infinite alternate;
+}
+  
+  /* Safari 4.0 - 8.0 */
+@-webkit-keyframes urmove {
+    from {
+      right: 0;
+    }
+    to {
+      right: -140px;
+    }
+}
+  
+@keyframes urmove {
+    from {
+      right: 0;
+    }
+    to {
+      right: -140px;
+    }
+}
+   
+@keyframes early 
+  { from { opacity:1; } to { opacity:0; } }
+  
+.early {
+    animation:fadeIn ease-in 1; /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+    animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+    animation-duration:1s;
+    animation-delay: 1.5s
+}
+/**animation ends**/
+
+
+/*** style footer***/
+.footer{
+    background-image: url(imgs/footerimg.png);
+    background-size:cover;
+    height:120px;
+}
+#about{
+    color:#733d41;
+    text-decoration: none;
+    text-align: center;
+    display:block;
+    padding-top:1.05rem;
+}
+
+.social a{
+    color:#733d41;
+    text-decoration: none;
+    margin:1.25rem 1rem;
+}
+
+.social{
+    text-align:center;
+    color:#733d41;
+}
+
+.fa-caret-up{
+    position:absolute;
+    right:10%;
+    color:#733d41;
+}
+
+/****************** tablet version*******************/
+@media screen and (min-width:600px){
+    html{
+        font-size:20px;
+    }
+    
+    /*style header*/
+    .header{
+        height:250px;
+    }
+    .fa-bars{
+        display:none;
+    }
+    .nav, footer a{
+        right:30px;
+    }
+    .nav #links{
+        display:block;
+    }
+    .nav #links a{
+        padding-left:25px;
+    }
+    .logo{
+        margin-left:30px;
+        padding-top:3.2rem;
+    }
+
+    /*style footer*/
+    .footer{
+        height:150px;
+    }
+    .fa-caret-up{
+        position:absolute;
+        right:30px;
+    }
+
+    /*style gallery*/
+    .gallery, .web, .work, .main{
+        grid-gap:30px;
+        margin:30px;
+    }
+    .web1 .content p, .web2 .content p{
+        padding:10px;
+    }
+    .work{
+        display:grid;
+        grid-template-columns:1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    .main img{
+        height:400px;
+    }  
+}
+
+/****************** laptop version*******************/
+@media screen and (min-width:1080px){
+    .loading{
+        background-image: url(imgs/backgroundlg.gif);
+    }
+    /**style margins**/
+    .nav, footer a, .fa-caret-up{
+        right:80px;
+    }
+    .logo{
+        margin-left:80px;
+    }
+    /**style header**/
+    .header{
+        height:300px;
+    }
+    .nav #links{
+        display:flex;
+    }
+    .nav #links a{
+        padding-left:80px;
+    }
+    .gallery, .web, .work, .main{
+        margin:30px 80px;
+    }
+  
+    /**style gallery**/
+    .gallery{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(3, 18vw);
+    }
+    .gallery3{
+        grid-column:3/4;
+        grid-row:1/3;
+    }
+    .gallery9{
+        grid-column:2/3;
+        grid-row:1/2; 
+    }
+    .gallery6{
+        grid-column:2/3;
+        grid-row:2/4; 
+    }
+    .gallery4{
+        grid-column:3/5;
+        grid-row:3/4; 
+    }
+    .gallery5{
+        display:none;
+    }
+    .gallery8{
+        grid-column:1/2;
+        grid-row:3/4; 
+    }
+    .gallery7{
+        grid-column:4/5;
+        grid-row:2/3; 
+    }
+
+    /*style web*/
+    .web1, .web2{
+        display:grid;
+        grid-template-columns:1fr 1fr;
+        grid-template-rows: 0.1fr 1fr;
+    }
+    .web1 img, .web2 img{
+        grid-column:1/2;
+        grid-row:2/3;
+        max-width:100%;
+        height:auto;
+    }
+    .web1 .content, .web2 .content{
+        grid-column:2/3;
+        grid-row:2/3;
+    }
+    .web1 h2, .web2 h2{
+        grid-column: 1/3;
+    }
+    .web1 .content p, .web2 .content p{
+        padding:50px;
+    }
+
+    /*style illustration*/
+    .work{
+        display:grid;
+        grid-template-columns:repeat(2, 1fr);
+        grid-template-rows: repeat(5, 10vw);
+    }
+    .work1{
+        grid-column:1/2;
+        grid-row:1/4;
+    }
+    .work2{
+        grid-column:2/3;
+        grid-row:1/3;
+    }
+    .work3{
+        grid-column: 1/2;
+        grid-row: 4/6;
+    }
+    .work4{
+        grid-column:2/3;
+        grid-row:3/6;
+    }
+
+    /*style about*/
+    .main{
+        display:grid;
+        grid-template-columns:1fr 1fr;
+        grid-template-rows:0.2fr 1fr;
+        margin:60px;
+        grid-gap:60px;
+    }
+    .main img{
+        grid-row: 1/3;
+        grid-column:1/2;
+    }
+    .main .content{
+        grid-column:2/3;
+        grid-row:1/2;
+    }
+    .main .early{
+        grid-column:2/3;
+        grid-row:2/3;
+    }
+}

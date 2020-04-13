@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anna's Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles.css">
+ 
+</head>
+<body>
+    <div class="header" id="top">
+        <a href="index.html"><img src="imgs/logo.png" alt="logo" class="logo"></a>
+        <div class="nav">
+            <nav id="links">
+                <a href="photography.html">PHOTOGRAPHY</a>
+                <a href="webdesign.html" class="active">WEB DESIGN</a>
+                <a href="illustration.html">ILLUSTRATION</a>
+            </nav>  
+            <!-- hamburger menu / bar icon to toggle the navigation links -->
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>  
+    </div> 
+    <!--javascript for the hamburger menu-->
+    <script>
+        function myFunction() {
+          var x = document.getElementById("links");
+          if (x.style.display === "block") {
+            x.style.display = "none";
+          } else {
+            x.style.display = "block";
+          }
+        }
+    </script>
+    <!--header ends here-->  
+
+    <div class="web">
+        <div class="web1">
+            <h2>Ottawa Ballet School</h2>
+            <img src="imgs/web/ottawaballet.png" alt="ballet">
+            <div class="content">
+                <p>Created Date: Feb. 17, 2020</p>
+                <p>Designed Deliverables: Logo;  Web Interfaces for desktop, tablet and mobile versions; Responsive Web Pages</p>
+                <p>Tools: Adobe Photoshop, Adobe XD, Adobe Illustrator, InVision, HTML, CSS</p>
+            </div>
+        </div>
+        <div class="web2">
+            <h2>O!Bake Bakery Website</h2>
+            <img src="imgs/web/obake.png" alt="bake">
+            <div class="content">
+                <p>Created Date: Dec. 2, 2019</p>
+                <p>Designed Deliverables: Brand Name; Logo;  Web Interfaces for desktop, tablet and mobile versions; Responsive Web Pages</p>
+                <p>Tools: Adobe Photoshop, Adobe XD, Adobe Illustrator, InVision, HTML, CSS</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <a href="#top"><i class="fa fa-caret-up"></i></a>
+        <a href="about.html" id="about">ABOUT ME</a>
+        <div class="social">
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-instagram"></a>
+            <p>&copy;ANNA 2020</p>
+        </div>
+    </div>
+
+</body>
+</html>

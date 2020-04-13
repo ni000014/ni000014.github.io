@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anna's Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles.css">
+ 
+</head>
+<body>
+    <div class="header" id="top">
+        <a href="index.html"><img src="imgs/logo.png" alt="logo" class="logo"></a>
+        <div class="nav">
+            <nav id="links">
+                <a href="photography.html">PHOTOGRAPHY</a>
+                <a href="webdesign.html">WEB DESIGN</a>
+                <a href="illustration.html">ILLUSTRATION</a>
+            </nav>  
+            <!-- hamburger menu / bar icon to toggle the navigation links -->
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>  
+    </div> 
+    <!--javascript for the hamburger menu-->
+    <script>
+        function myFunction() {
+          var x = document.getElementById("links");
+          if (x.style.display === "block") {
+            x.style.display = "none";
+          } else {
+            x.style.display = "block";
+          }
+        }
+    </script>
+    <!--header ends here-->  
+
+    <div class="main">
+        <img src="imgs/portrait.JPG" alt="portrait">
+        <div class="content">
+            <p>ANNA NI</p>
+            <p>Interactive Media Design</p>
+            <p>Connect with me:</p>
+            <p>Email: ni000014@algonquinlive.com</p>
+        </div>
+        <section class="early">
+            <article>
+               <p class="example-right">Photographer; Web Designer; Illustrator </p>
+            </article>
+            <article>
+                <p class="example-left">Art is a process to discover yourself.</p>
+                <p class="example-right">Explore the world, understand yourself.</p> 
+            </article>         
+            <article>
+            <marquee behavior="scroll" direction="left">Adobe Indesign, Abode Photoshop, Adobe Lightroom, Adobe XD; Adobe Premiere; Adobe Audition; Adobe Illustrator; HTML; CSS; Wordpress</marquee>    
+            <marquee behavior="scroll" direction="right">Look at the world through your own eyes</marquee>
+            </article>  
+            <article>
+                <p class="example-left">Passion, Persistence, A sense of adventure</p> 
+            </article>
+        </section>
+    </div>
+
+    <div class="footer">
+        <a href="#top"><i class="fa fa-caret-up"></i></a>
+        <a href="about.html" id="about" class="active">ABOUT ME</a>
+        <div class="social">
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-instagram"></a>
+            <p>&copy;ANNA 2020</p>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -3,17 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Welcome</title>
+    <title>Anna's Portfolio</title>   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-    <div class="banner">Welcome</div>
-    <h1>HELLO</h1>
-    <h1>Full Name: Anna Ni</h1>
-    <h1>Course & Section Number: MTM6201_020 Responsive Web Design II</h1>
-    <h1>GitHub User Name: ni000014</h1>
-    <h1>Interesting Story: Made a dish with broccoli, carrots and tomatos shaped in Christmas tree on Christmas Eve.</h1>
-    <footer>BYE</footer>
-
+<body class="loading">
+    <img src="imgs/logo.png" alt="logo" class="logolg">  
+    <div class="nav">
+        <nav id="links">
+            <a href="photography.html">PHOTOGRAPHY</a>
+            <a href="webdesign.html">WEB DESIGN</a>
+            <a href="illustration.html">ILLUSTRATION</a>
+        </nav>  
+        <!-- hamburger menu / bar icon to toggle the navigation links -->
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+    
+    <!--javascript for the hamburger menu-->
+    <script>
+        function myFunction() {
+          var x = document.getElementById("links");
+          if (x.style.display === "block") {
+            x.style.display = "none";
+          } else {
+            x.style.display = "block";
+          }
+        }
+    </script>
+     
+    <footer>
+        <a href="about.html">ABOUT ME</a>
+    </footer>
+     
 </body>
 </html>

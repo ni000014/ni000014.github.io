@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anna's Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles.css">
+ 
+</head>
+<body>
+    <div class="header" id="top">
+        <a href="index.html"><img src="imgs/logo.png" alt="logo" class="logo"></a>
+        <div class="nav">
+            <nav id="links">
+                <a href="photography.html" class="active">PHOTOGRAPHY</a>
+                <a href="webdesign.html">WEB DESIGN</a>
+                <a href="illustration.html">ILLUSTRATION</a>
+            </nav>  
+            <!-- hamburger menu / bar icon to toggle the navigation links -->
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>  
+    </div> 
+    <!--javascript for the hamburger menu-->
+    <script>
+        function myFunction() {
+          var x = document.getElementById("links");
+          if (x.style.display === "block") {
+            x.style.display = "none";
+          } else {
+            x.style.display = "block";
+          }
+        }
+    </script>
+    <!--header ends here-->  
+
+    <div class="gallery">
+        <figure class="gallery1">
+            <img src="imgs/photos/img1.jpg" alt="img1">
+        </figure>
+        <figure class="gallery2">
+            <img src="imgs/photos/img2.jpg" alt="img2">
+        </figure>
+        <figure class="gallery3">
+            <img src="imgs/photos/img3.jpg" alt="img3">
+        </figure>
+        <figure class="gallery4">
+            <img src="imgs/photos/img4.jpg" alt="img4">
+        </figure>
+        <figure class="gallery5">
+            <img src="imgs/photos/img5.jpg" alt="img5">
+        </figure>
+        <figure class="gallery6">
+            <img src="imgs/photos/img6.jpg" alt="img6">
+        </figure>
+        <figure class="gallery7">
+            <img src="imgs/photos/img7.jpg" alt="img7">
+        </figure>
+        <figure class="gallery8">
+            <img src="imgs/photos/img8.jpg" alt="img8">
+        </figure>
+        <figure class="gallery9">
+            <img src="imgs/photos/img9.jpg" alt="img9">
+        </figure>
+    </div>
+    
+    <div class="footer">
+        <a href="#top"><i class="fa fa-caret-up"></i></a>
+        <a href="about.html" id="about">ABOUT ME</a>
+        <div class="social">
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-instagram"></a>
+            <p>&copy;ANNA 2020</p>
+        </div>
+    </div>
+
+</body>
+</html>
