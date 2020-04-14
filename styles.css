@@ -170,7 +170,7 @@ footer a{
 
 .work{
     display:grid;
-    grid-template-columns:1;
+    grid-template-columns:1fr;
     grid-template-rows: repeat(4, 50vw);
     grid-gap:5px;
     margin:5px;
@@ -227,7 +227,6 @@ article {
 .example-left {
     white-space: nowrap;
     position: absolute;
-    text-transform: uppercase;
 }
   
 .example-left {
@@ -254,7 +253,39 @@ article {
       left: -140px;
     }
 } 
+
+.scroll-left {
+    white-space: nowrap;
+    position: absolute;
+    text-transform: uppercase;
+}
   
+.scroll-left {
+    -webkit-animation: moremove 10s linear infinite; /* Safari 4.0 - 8.0 */
+    white-space: nowrap;
+    animation: moremove 10s linear infinite alternate;
+}
+  
+  /* Safari 4.0 - 8.0 */
+@-webkit-keyframes moremove {
+    from {
+      left: 0;
+    }
+    to {
+      left: -600px;
+    }
+}
+  
+@keyframes moremove {
+    from {
+      left: 0;
+    }
+    to {
+      left: -600px;
+    }
+} 
+  
+
 .example-right {
     white-space: nowrap;
     position: absolute;
@@ -287,15 +318,48 @@ article {
       right: -140px;
     }
 }
+
+.scroll-right {
+    white-space: nowrap;
+    position: absolute;
+    top:2em;
+    opacity: .4;
+    text-transform: uppercase;
+}
+  
+.scroll-right {
+    -webkit-animation: imove 6s linear infinite; /* Safari 4.0 - 8.0 */
+    white-space: nowrap;
+    animation: imove 6s linear infinite alternate;
+}
+  
+  /* Safari 4.0 - 8.0 */
+@-webkit-keyframes imove {
+    from {
+      right: 0;
+    }
+    to {
+      left: -500px;
+    }
+}
+  
+@keyframes imove {
+    from {
+      right: 0;
+    }
+    to {
+      right: -500px;
+    }
+}
    
-@keyframes early 
+@keyframes fadeIn 
   { from { opacity:1; } to { opacity:0; } }
   
-.early {
-    animation:fadeIn ease-in 1; /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+.intro {
+    animation:fadeIn ease-in infinite; /* call our keyframe named fadeIn, use animattion ease-in and always repeat it  */
     animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
-    animation-duration:1s;
-    animation-delay: 1.5s
+    animation-duration:10s;
+    animation-delay: 3s
 }
 /**animation ends**/
 
@@ -507,7 +571,7 @@ article {
         grid-column:2/3;
         grid-row:1/2;
     }
-    .main .early{
+    .main .intro{
         grid-column:2/3;
         grid-row:2/3;
     }
